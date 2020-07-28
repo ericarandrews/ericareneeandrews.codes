@@ -169,11 +169,10 @@ text-align: center;
                 <td colspan="1"><a href="https://github.com/ericarandrews/java_dataStructuresAndAlgorithms/tree/master/M1DataStructuresAndAlgorithms">M1 Data Structures and Algorithms</a></td>
                 <td colspan="3">M1: Review for Data Structures and Algorithms <br> For M1, the requirements are to... trace and evaluate conditionals, loops, methods, and code involving null, 
                     write complete methods using conditionals and loops, and write your own parent and child classes and code that uses these classes... M1 was created with Java.
-<button onclick="m1()">M1 Console</button>
 <script>
 function m1() {
   alert(
-"Testing Object a \nParcel: ID: abcde");
+"Testing Object a Parcel: \nID: abcde \nWeight: 1.0 \nName: myname \nStreet: mystreet \nCity: mycity \nState: mystate \nZip: myzip");
 }
 </script> 
                 </td>
@@ -254,6 +253,28 @@ function m1() {
                 <td colspan="4" class="foot">&copy; ERICA ANDREWS 2020</td>
             </tr>
         </tbody>
-    </table>   
+    </table> 
+
+
+<button onclick="playVid()" type="button">Play Video</button>
+<button onclick="pauseVid()" type="button">Pause Video</button><br> 
+
+<video id="myVideo" width="320" height="176">
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<script> 
+var vid = document.getElementById("myVideo"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script> 
 </body>
 </html>
