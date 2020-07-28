@@ -141,6 +141,16 @@ text-align: center;
   z-index: 2;
   cursor: pointer;
 }
+    
+ #text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}    
 
 </style>
 <!-- javascript popup window script -->
@@ -192,6 +202,104 @@ text-align: center;
             link= window.open(url, '_new0','toolbar=0,menubar=0,scrollbars=1,status=1,resizable=1,top=1,left=150,fullscreen=0,Height=420px,Width=400px','')
         }
     </script>
+                    
+</style>
+</head>
+<body>
+<div id="overlay" onclick="off()">
+  <div id="text">
+    <p>
+
+Testing Object a, Parcel: 
+ID: abcde
+Weight: 1.0
+Name: myname
+Street: mystreet
+City: mycity
+State: mystate
+Zip: myzip
+
+
+Testing Object b, Parcel: 
+ID: fghij
+Weight: 1.0
+Name: aname
+Street: astreet
+City: acity
+State: astate
+Zip: azip
+
+
+Testing child class, overnightParcel: 
+ID: abcde
+Weight: 1.0
+Name: myname
+Street: mystreet
+City: mycity
+State: mystate
+Zip: myzip
+
+
+Testing the toString method: 
+ID: xxx
+Weight: 1.0
+Name: name
+Street: street
+City: city
+State: state
+Zip: zip
+
+
+Testing the equals method: 
+Is object x equal to object y? false
+Is object x equal to object z? true
+
+
+******************************Testing id Criteria
+These ids meet the criteria- should print true.
+	true	exactly 2 m's after x
+
+	true	exactly 3 v's after e; also 1 extra v before x- that doesn't affect the criteria
+
+	true	exactly 2 b's after the first g; also a second g- that doesn't affect the criteria
+
+
+These ids do NOT meet the criteria- should print false.
+	false	 only 1 a after the z- the other a comes before the z
+
+	false	 3 q's after the f
+
+	false	 no k
+
+	false	 the first b is the firstChar; there are then only *2* other b's *after* that
+
+
+
+******************************Testing e-Mail Validator
+true : true for janeeyre@email.com
+true : true for markdarcy@gmail.abc
+true : true for dr.frankenstein@monster.com
+true : true for !@abc.xyz
+false : false for @abc.xyz
+false : false for abc.com
+false : false for j@com
+false : false for jm@gmail.comm
+false : false for jm@gmail.hi
+false : false for jm@gmail.z
+false : false for abcdef
+      </p>
+    </div>
+</div>
+  <button onclick="on()">Turn on overlay effect</button>
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";
+}
+function off() {
+  document.getElementById("overlay").style.display = "none";
+}
+</script>                   
+                    
                     
 <!--    text button-->                    
 <button onclick="m1()">M1 Console View Text</button>
