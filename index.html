@@ -141,6 +141,20 @@ text-align: center;
   z-index: 2;
   cursor: pointer;
 }
+	
+#overlaytext {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}	
     
  #text{
   position: absolute;
@@ -206,10 +220,7 @@ p{
         }
     </script>
                    
-<div id="overlay" onclick="off()">
-  <div id="text">
-    <p>
-
+<div id="overlaytext" onclick="off()"><div id="text"><p>
 Testing Object a, Parcel: 
 ID: abcde
 Weight: 1.0
@@ -218,7 +229,6 @@ Street: mystreet
 City: mycity
 State: mystate
 Zip: myzip
-
 
 Testing Object b, Parcel: 
 ID: fghij
@@ -229,7 +239,6 @@ City: acity
 State: astate
 Zip: azip
 
-
 Testing child class, overnightParcel: 
 ID: abcde
 Weight: 1.0
@@ -238,7 +247,6 @@ Street: mystreet
 City: mycity
 State: mystate
 Zip: myzip
-
 
 Testing the toString method: 
 ID: xxx
@@ -249,13 +257,12 @@ City: city
 State: state
 Zip: zip
 
-
 Testing the equals method: 
 Is object x equal to object y? false
 Is object x equal to object z? true
 
-
 ******************************Testing id Criteria
+	
 These ids meet the criteria- should print true.
 	true	exactly 2 m's after x
 
@@ -273,9 +280,8 @@ These ids do NOT meet the criteria- should print false.
 
 	false	 the first b is the firstChar; there are then only *2* other b's *after* that
 
-
-
 ******************************Testing e-Mail Validator
+	
 true : true for janeeyre@email.com
 true : true for markdarcy@gmail.abc
 true : true for dr.frankenstein@monster.com
@@ -287,9 +293,8 @@ false : false for jm@gmail.comm
 false : false for jm@gmail.hi
 false : false for jm@gmail.z
 false : false for abcdef
-      </p>
-    </div>
-</div>
+</p></div></div>
+			
   <button onclick="on()">Turn on overlay effect</button>
 <script>
 function on() {
