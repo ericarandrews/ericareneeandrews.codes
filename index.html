@@ -128,7 +128,7 @@ text-align: center;
   background-color: #f1f1f1;
 }
 
-#overlay {
+#overlaym1, #overlayprojecta  {
   position: fixed;
   display: none;
   width: 100%;
@@ -142,6 +142,7 @@ text-align: center;
   cursor: pointer;
 }
 	
+/**	
 #overlaytext {
   position: fixed;
   display: none;
@@ -167,8 +168,9 @@ text-align: center;
 }    
 p{
  width: 50%;
- 	
 }
+**/
+	
 </style>
 <!-- javascript popup window script -->
 <!--
@@ -208,7 +210,7 @@ p{
 
  <!--    video button-->                   
 <button onclick="onm1()">M1 Console View Video</button>                    
-<div id="overlay" onclick="offm1()">
+<div id="overlaym1" onclick="offm1()">
   <video width="100%" height="50%" controls autoplay>
   <source src="M1DataStructuresAndAlgorithms.mp4" type="video/mp4">
    Your browser does not support the video tag.
@@ -216,10 +218,10 @@ p{
 </div>			
 <script>
 function onm1() {
-  document.getElementById("overlay").style.display = "block";
+  document.getElementById("overlaym1").style.display = "block";
 }
 function offm1() {
-  document.getElementById("overlay").style.display = "none";
+  document.getElementById("overlaym1").style.display = "none";
 }
 </script>    
                 </td>
@@ -282,7 +284,7 @@ function offm1() {
                 <td colspan="3"Project A for Data Structures and Algorithms <br> For Project A, the requirements are to... use Generics to create a Java class called Trio that represents a group of three items... Project A was created with Java
 <!--    video button-->                   
 <button onclick="onprojecta()">Project A Console View Video</button>                    
-<div id="overlay" onclick="offprojecta()">
+<div id="overlayprojecta" onclick="offprojecta()">
   <video width="100%" height="50%" controls autoplay>
   <source src="ProjectADataStructuresAndAlgorithms.mp4" type="video/mp4">
    Your browser does not support the video tag.
@@ -290,10 +292,10 @@ function offm1() {
 </div>
 <script>
 function onprojecta() {
-  document.getElementById("overlay").style.display = "block";
+  document.getElementById("overlayprojecta").style.display = "block";
 }
 function offprojecta() {
-  document.getElementById("overlay").style.display = "none";
+  document.getElementById("overlayprojecta").style.display = "none";
 }
 </script>  
 	         </td>
