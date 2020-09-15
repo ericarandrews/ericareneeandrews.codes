@@ -7,9 +7,7 @@
     <meta name="keywords" content="Erica, Andrews, home, project, about">
     <meta name="author" content="Erica Andrews">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style type="text/css">
-
 body {
 background-color: #ccc;
 font-family: Times New Roman;
@@ -95,16 +93,16 @@ font-size: 14pt;
 color: green;
 text-align: left;
 }
-
+	
 .f  {
 margin: 0px auto;
 width: 200px;
 }
-    
+	
 #center {
 text-align: center;
 }
-
+	
 .collapsible {
   background-color: #777;
   color: white;
@@ -116,19 +114,20 @@ text-align: center;
   outline: none;
   font-size: 15px;
 }
-
+	
 .active, .collapsible:hover {
   background-color: #555;
 }
-
+	
 .content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
 }
-
-#overlaym1, #overlayprojecta, #overlayprojectb, #overlayprojectc  {
+	
+#overlaym1, #overlayprojecta, #overlayprojectb, 
+#overlayprojectc, #overlayprojectdab {
   position: fixed;
   display: none;
   width: 100%;
@@ -140,51 +139,10 @@ text-align: center;
   background-color: rgba(0,0,0,0.5);
   z-index: 2;
   cursor: pointer;
-}
-	
-/**	
-#overlaytext {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 2;
-  cursor: pointer;
-}	
-    
- #text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 10px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}    
-p{
- width: 50%;
-}
-**/
-	
+}		
 </style>
-<!-- javascript popup window script -->
-<!--
-<script>
-    function new_window(url)    {
-        link = window.open(url,
-        '_new', 'toolbar=0,menubar=0,scrollbars=0,status=0,resizable=1,top=80,left=550px,fullscreen=0,Height=750px,Width=750px', '')
-    }
-</script>   
--->
 </head>
-
 <body>
-
     <nav>
         <ul>
 	<li class="nav"><a href="https://www.ericareneeandrews.codes">HOME</a></li>	
@@ -193,7 +151,6 @@ p{
         <li class="nav"><a href="https://ericarandrews.github.io/projectpython.html">Project PYTHON</a></li>		
 	</ul>
     </nav>
-
     <table class="main">
         <tbody>
             <tr class="white">
@@ -348,19 +305,19 @@ function offprojectc() {
                     Then, use this new binary search tree to organize records from a big data set. This project has two parts. In Part A, you will write the binary search tree class. 
                     In Part B, you'll use the class to analyze a data set... Project D was created with Java.
 <!--    video button-->                   
-<button onclick="onprojectd()">Project D Console View Video</button>                    
-<div id="overlayprojectd" onclick="offprojectd()">
+<button onclick="onprojectdab()">Project D Console View Video</button>                    
+<div id="overlayprojectdab" onclick="offprojectdab()">
   <video width="100%" height="50%" controls autoplay>
   <source src="ProjectDDataStructuresAndAlgorithms.mp4" type="video/mp4">
    Your browser does not support the video tag.
   </video>
 </div>			
 <script>
-function onprojectd() {
-  document.getElementById("overlayprojectd").style.display = "block";
+function onprojectdab() {
+  document.getElementById("overlayprojectdab").style.display = "block";
 }
-function offprojectd() {
-  document.getElementById("overlayprojectd").style.display = "none";
+function offprojectdab() {
+  document.getElementById("overlayprojectdab").style.display = "none";
 }
 </script>	
 		</td>
