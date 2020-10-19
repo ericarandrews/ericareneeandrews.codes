@@ -126,7 +126,7 @@ text-align: center;
   background-color: #f1f1f1;
 }
 	
-#overlaym1, #overlaym3, #overlayprojecta, #overlayprojectb, 
+#overlaym1, #overlaym3, #overlaym4, #overlayprojecta, #overlayprojectb, 
 #overlayprojectc, #overlayprojectdab, #overlayprojectdb {
   position: fixed;
   display: none;
@@ -209,7 +209,25 @@ function offm3() {
             <tr>
                 <td colspan="1"><a href="https://github.com/ericarandrews/java_dataStructuresAndAlgorithms/tree/master/M4DataStructuresAndAlgorithms">M4 Data Structures and Algorithms</a></td>
                 <td colspan="3">M4: Data Structures and Algorithms <br> For M4, the requirements are to... trace the behind-the-scenes variables in the ArrayBag, ResizeableArrayBag, and AList classes, 
-                    evaluate ArrayList code, and implement methods to go inside the ArrayBag, ResizeableArrayBag, and AList classes... M4 was created with Java.</td>
+                    evaluate ArrayList code, and implement methods to go inside the ArrayBag, ResizeableArrayBag, and AList classes... M4 was created with Java.
+		
+<!--    video button-->                   
+<button onclick="onm4()">M4 Console View Video</button>                    
+<div id="overlaym4" onclick="offm4()">
+  <video width="100%" height="50%" controls autoplay>
+  <source src="M4DataStructuresAndAlgorithms.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+  </video>
+</div>			
+<script>
+function onm4() {
+  document.getElementById("overlaym4").style.display = "block";
+}
+function offm4() {
+  document.getElementById("overlaym4").style.display = "none";
+}
+</script> 
+		    </td>
             </tr>
             <tr>
                 <td colspan="1"><a href="https://github.com/ericarandrews/java_dataStructuresAndAlgorithms/tree/master/M5DataStructuresAndAlgorithms">M5 Data Structures and Algorithms</a></td>
